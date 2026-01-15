@@ -10,6 +10,7 @@ WORKDIR /app
 COPY --from=node /usr/local/bin/ /usr/local/bin/
 COPY --from=node /usr/lib/ /usr/lib/
 # See https://github.com/moby/moby/issues/37965
+# See https://github.com/moby/moby/issues/37965
 RUN true
 COPY --from=node /usr/local/lib/node_modules /usr/local/lib/node_modules
 COPY requirements requirements
